@@ -1,0 +1,12 @@
+# run649
+execute /mnt/insulin/run649.mod -dir=/mnt/run649 
+
+# run650
+# same as run649 but parallelization options
+
+execute /mnt/insulin/run650.mod -dir=/mnt/run650 -parafile=/mnt/insulin/16.pnm
+
+
+
+
+

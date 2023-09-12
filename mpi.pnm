@@ -1,0 +1,12 @@
+$GENERAL
+NODES=2 PARSE_TYPE=2 TRANSFER_TYPE=1 PARAPRINT=1 COMPUTERS=2
+ 
+$COMMANDS
+1:mpiexec -wdir "$PWD" -n 1 ./opt/nm/run/nonmem $*
+2: -wdir $HOME -n 1 -host mpi-6408f44e9386537378fea181-mpi-worker-0.mpi-6408f44e9386537378fea181-mpi-worker.domino-compute.svc.cluster.local ./opt/nm/run/nonmem –wnf
+;3: -wdir $HOME -n 1 -host mpi-6408f44e9386537378fea181-mpi-worker-1.mpi-6408f44e9386537378fea181-mpi-worker.domino-compute.svc.cluster.local /opt/nm/run/nonmem –wnf
+ 
+$DIRECTORIES
+1:NONE
+2:/mnt/run650/worker1
+;3:/mnt/run650/worker2
