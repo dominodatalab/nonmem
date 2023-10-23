@@ -20,7 +20,7 @@ how to install MPI that might be helpful here, as well as the parafile informati
 `execute /mnt/code/insulin/run649.mod -dir=/mnt/code/run649`
 
 #### Nonmem execution for run105:
-`execute /mnt/code/run105.mod -dir=/mnt/code/run105
+`execute /mnt/code/run105.mod -dir=/mnt/code/run105`
  
 #### Parallelization for run650:
 This is the same as run649 but with parallelization options, from the original example:
